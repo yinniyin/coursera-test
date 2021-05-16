@@ -1,0 +1,86 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+p {
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+body > div > div > section{
+  position: relative;
+  background-color: grey;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+h2{
+  position: relative;
+  left: calc(100% - 130px);
+  width: 130px;
+  text-align: center;
+  font-weight: bolder;
+  border: 1px solid black;
+  margin-top: 0px;
+  font-size: 1.25em;
+}
+
+#left {
+  background-color: pink;
+  color: black;
+}
+
+#middle {
+  background-color: #B03131;
+  color: white;
+}
+
+#right {
+  background-color: #ebc53d;
+  color: black;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Mobile **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
